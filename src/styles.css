@@ -1,0 +1,55 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #0f0f0f;
+  color: #f0f0f0;
+}
+.container {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  gap: 5px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+.header {
+  grid-area: header;
+  border: 1px solid;
+  padding: 0.5em;
+}
+.main {
+  grid-area: main;
+  border: 1px solid;
+  display: grid;
+  padding: 0.5em;
+}
+.footer {
+  grid-area: footer;
+  border: 1px solid;
+  padding: 0.5em;
+}
+.dashboard {
+  background: white;
+  color: black;
+  padding: 0.5em;
+  background-color: #2e2e2e;
+  display: grid;
+  grid-template-columns: 56px 1fr;
+}
+.columns {
+  display: grid;
+  grid-template columns: 200px 200px 200px;
+  grid-auto-columns: 200px;
+  grid-auto-flow: column;
+  overflow-y: hidden;
+  color: white;
+  padding: 1em;
+  gap: .5em
+}
+.column {
+  border: 1px solid white;
+  padding: 0 .5em;
+}
